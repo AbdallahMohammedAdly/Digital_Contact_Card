@@ -1,7 +1,7 @@
 let data
 
 async function fetchData() {
-    const response = await fetch("http://127.0.0.1:5500/web2/data.json")
+    const response = await fetch("data.json")
     data = await response.json()
     init()
 }
