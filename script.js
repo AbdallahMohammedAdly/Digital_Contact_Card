@@ -29,7 +29,7 @@ linkedin.href=data.linkedin
 
 github.href=data.github
 
-new QRCode(document.querySelector("#qrcode"),{text:data.website? data.website: location.href,width:160,height:160})
+new QRCode(document.querySelector("#qrcode"),{ text:location.href,width:160,height:160})
 
 }
 
