@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Digital Business Card</title>
+
+<meta name="description" content="Professional Digital Identity">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</head>
+
+<body>
+
+<header class="cover">
+
+<img id="cover">
+
+<div class="top-actions">
+
+<button id="themeToggle">🌙</button>
+
+<button onclick="openAdmin()">⚙</button>
+
+</div>
+
+</header>
+
+<main class="container">
+
+<section class="profile-section">
+
+<img id="profile" class="profile">
+
+<h1 id="name"></h1>
+
+<p id="title"></p>
+
+</section>
+
+
+<section class="contact-buttons">
+
+<a id="call" class="btn"><i class="fas fa-phone"></i> Call</a>
+
+<a id="email" class="btn"><i class="fas fa-envelope"></i> Email</a>
+
+<a id="whatsapp" class="btn"><i class="fas fa-comment"></i> WhatsApp</a>
+
+<a id="linkedin" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+
+<a id="github" class="btn"><i class="fab fa-github"></i> GitHub</a>
+
+</section>
+
+<section class="actions my-3">
+    
+    <div id="qrcode"></div>
+    
+    <button onclick="shareContact()" class="btn btn-primary"> <i class="fas fa-share-alt"></i> Share link</button>
+    
+</section>
+
+
+
+</main>
+
+<div id="adminPanel" class="admin hidden">
+
+<h3>Edit Profile Data</h3>
+
+<textarea id="jsonEditor"></textarea>
+
+<button onclick="saveJson()">Save</button>
+
+<button onclick="closeAdmin()">Close</button>
+
+</div>
+
+<script src="js/all.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>
