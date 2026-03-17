@@ -1,7 +1,7 @@
 let data
 
 async function fetchData() {
-    const response = await fetch("data.json")
+    const response = await fetch("https://abdallahmohammedadly.github.io/Digital_Contact_Card/data.json")
     data = await response.json()
     init()
 }
